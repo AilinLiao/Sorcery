@@ -1,0 +1,14 @@
+a
+b
+hand
+play 1
+board
+play 5
+play -3
+play 0
+quit
+play p
+play ~
+play !
+play 2
+play 3

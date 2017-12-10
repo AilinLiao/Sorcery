@@ -1,0 +1,23 @@
+Air Elemental
+Earth Elemental
+Fire Elemental
+Potion Seller
+Novice Pyromancer
+Apprentice Summoner
+Master Summoner
+Magicless
+Giant Strength
+Magicless
+Disenchant
+Magic Fatigue
+Silence
+Giant Strength
+Magic Fatigue
+Silence
+Giant Strength
+Magic Fatigue
+Silence
+Banish
+Unsummon
+Recharge
+Disenchant

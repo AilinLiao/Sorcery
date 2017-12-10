@@ -1,0 +1,152 @@
+/*//MINION ATTACKS
+bool Minion::receiveAttackFrom(FireElemental &f, bool ability) {
+  if (ability) {
+    --currDef; 
+  } else {
+    currDef -= f.getCurrAttack();
+  }
+  f.attacked();
+  if (currDef <= 0){
+    cout << "Minion died from Blizzard RIPPITY RIP C:" << endl;
+    reset(); return false;
+  }
+  return true;
+}
+
+bool Minion::receiveAttackFrom(PotionSeller &p, bool ability) {
+  if (ability) {
+    ++currDef;
+  } else {
+    currDef -= p.getCurrAttack();
+  }
+  p.attacked();
+  if (currDef <= 0){
+    cout << "Minion died from Blizzard RIPPITY RIP C:" << endl;
+    reset(); return false;
+  }
+  return true;
+}
+
+bool Minion::receiveAttackFrom(NovicePyromancer &n, bool ability) {
+  if (ability) {
+    --currDef;
+  }else{
+    currDef -= n.getCurrAttack();
+  }
+  n.attacked();
+  if (currDef <= 0){
+    cout << "Minion died from Novice Pyromancer  RIPPITY RIP C:" << endl;
+    reset(); return false;
+  }
+  return true;
+}
+
+bool Minion::receiveAttackFrom(ApprenticeSummoner &a) {
+  currDef -= a.getCurrAttack();
+  a.attacked();
+  if (currDef <= 0){
+    cout << "Minion died from Apprentice Summoner RIPPITY RIP C:" << endl;
+    reset(); return false;
+  }
+  return true;
+}
+
+bool Minion::receiveAttackFrom(MasterSummoner &m) {
+  currDef -= m.getCurrAttack();
+  m.attacked();
+  if (currDef <= 0){
+    cout << "Minion died from Master Summoner  RIPPITY RIP C:" << endl;
+    reset(); return false;
+  }
+  return true;
+}
+*/
+
+
+  // TRIGGERED ABILITIES
+  bool receiveAttackFrom(FireElemental &f, bool ability);
+  bool receiveAttackFrom(PotionSeller &p, bool ability);
+
+  // ACTIVATED ABILITIES
+  bool receiveAttackFrom(NovicePyromancer &n, bool ability);
+  bool receiveAttackFrom(ApprenticeSummoner &a);
+  bool receiveAttackFrom(MasterSummoner &m);
+
+
+//*************************************************************************************//
+//game controller loop + getState()
+
+/*
+int GameController::getState(){
+  //1st case: no cards on board/deck + health > 0
+  if(){
+    return DRAW;
+  }else if (){ //2nd case: owner health 2 <= 0 && owner 1 health > 0
+    return ONE_WIN;
+  }else if (){ //3rd case: as above but flipped
+    return TWO_WIN;
+  }
+  //4th case: game still continues
+  return IN_PROGRESS;
+
+}
+*/
+
+/*Minion * GameC
+      cout << currcmd << endl;
+      if (!testing) continue;
+    } else if (currcmd == "attack") {
+      cout << currcmd << endl;
+      string arg1 = "";
+      string arg2 = "";
+      iss >> arg1;  unique_ptr(unique_ptr<T> &&other)
+    : ptr{other.ptr} {
+    other.ptr = nullptr;
+  }
+unique_ptr<T> &operator=(unique_ptr<T> &&other) {
+  using
+      iss >> arg2;
+	  
+      cout << "argument 1 is " << arg1 << " and argument 2 is " << arg2 << endl;
+	    
+    } else if (currcmd == "play") {
+      cout << currcmd << endl;
+      string arg1, arg2, arg3;
+      iss >> arg1; iss >> arg2; iss >> arg3;
+
+      cout << "ar 1 is " << arg1 << " arg2 is " << arg2 << " arg3 is " << arg3 << endl;
+    } else if (currcmd == "use") {
+      cout << currcmd << endl;
+      string arg1, arg2, arg3;
+      iss >> arg1; iss >> arg2; iss >> arg3;
+
+      cout << "ar 1 is " << arg1 << " arg2 is " << arg2 << " arg3 is " << arg3 << endl;
+    } else if (currcmd == "inspect") {
+      cout << currcmd << endl;
+      string arg;
+      iss >> arg;
+      cout << "arg = " << arg << endl;
+    } else if (currcmd == "hand") {
+      //display hand
+      cout << currcmd << endl;
+    } else if (currcmd == "board") {
+      //display board
+      cout << currcmd << endl;
+*/
+
+//game controller use
+
+//void GameController::At
+/*
+void GameController::Use(Minion *m1, Owner *o, Minion *m2) {
+  if(m1->getName() != "Novice Pyromancer"){
+    cerr << "Invalid Card" << endl;
+  }
+  bool dead = m2->receiveAttackFrom(NovicePyromancer &n, true);
+  if(dead){
+    bury(m2);
+  }
+}
+*/
+
+
