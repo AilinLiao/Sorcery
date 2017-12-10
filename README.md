@@ -1,6 +1,6 @@
 # Sorcery
 ### Goal:
-To 'kill' your opponent (i.e. decrease his/her health to 0 before they decrease your health to 0). You can do so by attacking them with your minions C:
+To 'kill' your opponent (i.e. decrease his/her health to 0 before they decrease your health to 0). You can do so by attacking them with your minions.
 
 ### How to Play:
 1. ```git clone``` this repo and run ```./sorcery```
